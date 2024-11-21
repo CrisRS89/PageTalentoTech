@@ -1,0 +1,98 @@
+/* Estilos Básicos */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+header {
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    background-color: #c00; /* Rojo para el encabezado */
+    color: white;
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Centrar verticalmente el logo y el título */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.header-container img {
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 150px; /* Espacio entre el logo y el título */
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem; /* Aumentar el tamaño del título */
+    margin: 0; /* Eliminar margen por defecto */
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Enlaces en blanco */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #333; /* Fondo gris oscuro para las tarjetas */
+    border: 1px solid #c00; /* Borde rojo */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    color: white; /* Texto en blanco dentro de las tarjetas */
+}
+
+.grid-reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+footer {
+    background-color: #c00; /* Rojo para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
